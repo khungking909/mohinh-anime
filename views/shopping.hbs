@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="shop">
+            <div class="shop-1">
+                <div class="shop-1-left">
+                    <table>
+                        <thead>
+                            <th id="firt-head">SẢN PHẨM</th>
+                            <th class="second-head">GIÁ</th>
+                            <th class="second-head">SỐ LƯỢNG</th>
+                            <th class="second-head" style="text-align: end;">TẠM TÍNH</th>
+                        </thead>
+                        <tbody>
+                            {{#each data}}
+                            <tr>
+                                <td id="firt-row">
+                                    <form action="/shoppingcart/{{this.idsp}}?_method=DELETE" method="post"
+                                        style="align-self: center;">
+                                        <button type="submit">
+                                            <img height="15px"
+                                                src="https://cdn-icons-png.flaticon.com/128/3096/3096673.png" alt="">
+                                        </button>
+                                    </form>
+                                    <img height="80px" style="margin: 5px;" src="{{this.img}}" alt="">
+                                    <p>{{this.discription}}
+                                    </p>
+                                </td>
+                                <td class="second-row">{{this.price}}K VND</td>
+                                <td class="second-row">{{this.quantity}}</td>
+                                <td class="second-row" style="text-align: end;">{{this.sumprice}}K VND</td>
+
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="shop-1-right">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

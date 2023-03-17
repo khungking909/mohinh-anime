@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="details">
+            <div class="details-1">
+                <p style="color: gray; font-size:20px">TRANG CHỦ / <span style="color: black;">MÔ HÌNH ANIME</span></p>
+            </div>
+            <div class="details-1">
+
+                {{#each data}}
+                <img width="40%" height="500px" src="{{this.img}}" alt="">
+                <div class="details-1_right">
+                    <p>{{this.discription}}</p>
+                    <p style="color: black;">{{this.price}}K VND</p>
+                </div>
+                {{/each}}
+
+            </div>
+            <div class="submit-items" action="" method="post">
+                
+                {{#each data}}
+                <form action="/shoppingcart/{{this.id}}" method="post"><button type="submit" class="btn_add" 
+                        style="font-weight: bold;width:200px;" >THÊM VÀO GIỎ HÀNG</button></form>
+                <a class="btn_add" href="">MUA NGAY</a>
+                <a href="/update/{{this.id}}" class="btn_add {{../display}}">UPDATE</a>
+                <form action="/delete/{{this.id}}?_method=DELETE" method="post"><button type="submit"
+                        class="btn_add {{../display}}" style="width:200px;">DELETE</button></form>
+                {{/each}}
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

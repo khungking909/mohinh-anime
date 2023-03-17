@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="main-1">
+                <p style="color: gray;">TRANG CHỦ / <span style="color: black;">MÔ HÌNH ANIME</span></p>
+            </div>
+            <div class="main-1" style="margin-top: -10px;">
+
+                <div class="main-1__left">
+                    <div class="menu-search">
+                        <p>Tìm kiếm</p>
+                    </div>
+                    <p>Mô hình anime</p>
+                    <div class="list_search">
+                        {{#each kind}}
+                        <a href="/anime/{{this.kind}}">{{this.name}}</a>
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="main-1__right">
+                    <div style="text-align: center;">
+                        <img width="80%" height="200px"
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIRERERERIRERERDhERERcRERERERERFxcYGBcTFxcbICwkGx0pHhcXJTYlKS4wMzMzGiI5PjkyPSwyMzABCwsLEA4QHRISHjIqICkyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAwECBAUGB//EADgQAAIBAwIFAgQFAgUFAQAAAAABAgMREgQhBRMxQVEiYTJxgZEGQlKh0RTwI2JyguEzU7HB8Rb/xAAaAQEBAQEBAQEAAAAAAAAAAAAAAQIDBAUG/8QALxEAAgEDAgMFCAMBAAAAAAAAAAECAxESEyEEMfBBYXGRwQUiUYGh0eHxFDKxFf/aAAwDAQACEQMRAD8A48Yl4wLRgNjA+uj822VjAZGBaMRiiaMNlFEsojFEuoFMilElQGqJZQKZEqJbEbgTiUlxOJNhuIYgC8ScRmIYgC8QxGYhiLgXiTiXxDEXAvEMRmIYi4F4hiMxDEXAvEMRmIYi4F4lbDsSMQBViMR2IYgCbFXA0YkYgGdxKtGlxKuBLmjM4lHE0uBRxMlRmlAXKJqcSMSM2jG4FcDXKIuxhs6oZGAxRJjEbGBTkysYl4wGRgMUDVzDFqBZRGKJKgW5GLUS1hiiWUAZFWJxG4BgW4FYhiOwDAEE4hiNwDAtwKxJxG4hiLgTiGI7EnElwKxK4jsScRcCMQxHYhiLgTiGI7EjAXArEMR2JGAArEMR2AYAonEiw7EjAATYq4j3Aq4EKIcCriPcSMBcpmcAjRfyNrhYHDY4ymdYRMbpJCXRNsoFMTnkzvYiFMbGmMhAdGmMw4CY0xkaY1JXUbq7TaXdpWu/3X3GqBrMxpmdQLKmaFAsoDMmmZ+WTiaFAtgXMmmZsQxNPLJ5YzJpmbEMTTyyeWMxpmXEMTVyw5YzGmZcQxNXLDljMaZlxDE1csOWMxpmXEMTVyw5YzGmZcQxNXLDljMaZlxDE1csOWMxpmXEMTVyw5YzGmZcSMTXyyOWMxpmXEjE18sjljMaZkcCHTNfLIcBmXTMbphGnujU4E0qe/0MynsajTuxEoBKBsdMiVI4uR6o0jnypiuWb50xWBjI3pEQpjVT8Wvba/QtZRTk9kld+yOFxbW0a8LU68KdWnU9MpTnTxflPF3T6dkE7hxsc6prak6qlhOU4qdoU8pU3Z0/XderHo3H/T5Z6nh9dTilKUHUUbzjC/od7Wae8fk99meJp1KunqZZU1O1SKnTlCbnkk3J+q3+5/vY7H4PhTVWpKU8akk/TN05N3fXK177rur79Tbe1zCW9j1aiXUB6gTBKSvFpq8lt5i2mvumjGZrTEKBKgacCcBmTTM2AYGnAMBmNMzYBgasQxGY0zLgGBrwIxGY0zLgGBqxJwGY0zLyw5ZpxDEZjTM2BGBqxJwGY0zJgGBrwIwGY0zLgTgasCMBmNMy4BgasQxGY0zLgGBpwJjTvshmNMy4EYnQWl8sXKlbqRVEzTotGPAjA14FcC5mdMjlpdEc3X66np5wjK95ySsk72tLeKt6ndJWX6kbtbq+VTlNwnUwSbUFeTjfdpd7dTwmq1dOvqXKFRwpVK8FmnFKF4TvLGVnD45b9HeQW50m0ltzPcpJq6/+ezKuJ5vgHFYxqrS00pU1k+Y21zNlvGLeyvfpe56lq5zleJ0g1IzTgKwHzqLdJpy32uk7+DjVuJ6mMpRWlckns1PJWsu9jFzbsjsqG21r279Lnh+K6mc6koz0lCbjNqToylOTbsndx3i792r9jt6vXUp08NTdQd05xm6c7d7W6/LueX43o6EGqlDVKupr1KUnzE/ey3Xz3O0IuLtI4ympK8euu4yTr+v/AKcKcVlaEI7Xxdssm2+17vzY6ullKfJceHQqbSydpuNVXc5Wt6U1aVlu+3sefR1+Fwhi8ddLTSa3ThVjGT3/AD027rp1X0Ostun6HKPP9ep9B0Gpryo1J1qMNPGMJuCjUlKaUVtdKO3Tqrv2M34O1PO08nlKTVao3lCEN5SlN9G7tuT9vB5jX1NLS0qhTr1a1apBeuNSagnGcrwlTyvFPJ2ut079Rv4K4lOE+TSoKrOc1Ko04xkqa6u8nvbbulv3bODj7ra+3+nZS95L8/4fQ8CcDRgZlrqfNlRy/wASMIzfhJ36vt0697qx58zvgWwDA04hiTMuBnwDA0YhiMxgZ8AwNGIYjMYGfAMDRiGIzGBnwDA0YhiMxgZ1TLqkPjAbGCMyqm40jLyyeUbFAHA56h00jC6Qt0zoSgKlBG41TEqRkwDA0qASjY3mY0zNgXow3fyGYkpWDncKFmGJzv6+E9RU06lHKFOlK17TcpOpmreEo03f/OvKH8R4tR08b1JPK11GCym15su38Hi+A8c5vEa08sKFRPacqcFGC+HJy6u76R7t+7LCnJrK23XIzUqRvinv2923b8D2mBTFXaurrrurr5+Di8a/EMbOnpndvaVS2yXiPn+7eTzVHU1KUsqcpKSae0n6t729/qe2nwk5Ru9uvofNre0KdOeMVf4tdb9/I7fHJ6qDnaelqUpRx5c0qbj6n6t5tv8AKn5bSx3bPH8RhGEoudGlp6l4bU6udt95cpXw2/U7l/xDxCFepm9LyZSis5JyU3U3u8r4yVsesb9r9ziu3ZWXu7lhBpb9fU6zmn/XdHb4ZxKppZucFCcZ7NSreluy6Pp47P4bXOzPj1aUZL0wcv0rePlJ3PG03D86n/stujoaG3WNNpO/qnY7whBvdHj4ipUS2bXhtz77+lzVWqWTcr26vqzkz1kk2o1dRj2tUZ0q9ZRV1Zvxc5tTVxv6qULm6r7zjwsMd1H6pfQ9JrIynTtFwX6o1I3jL2v2PL6qlhKzcL2u1TeUYv8ATffc6mrjp6rTdXF/NyX2fT6HLqxpx2i5Tf6rpR6+LHJnujyFIbRwv61K3+RpNffqKRJDTGylC81GLs/gcn6or3S2bN3BNTUp1ly6vIzUoymoOo4xtd2it5Pboc5T2tZb28/yaNDXcJwmmouO6bUml9t7kaurETs7n1/Va106N6coTqqmpwhNyjKajbL0/EuvV3s2rnz7+s5dSrOpQqU6sZcyhCeUadGpnN3lF/FbNWaSs5flTu8ut45KvZVI0ptJeqpGSm31632+rOd/VWmnhTUV6cfXKFul7tuT79/oeanQcOfXXgeqpxCnba3XXSR9h4TUqToUp1XF1JU054q0cn4Nh8v4NrZU3GGenpxlJyShWnJreyjGOTUXuelhqKkWpKbTT8t/+Tm+Ck+Ul5F/nxWzi/NHqwODQ4xNfGlNe3pf8HYoV4VFlB38ruvZo8danUo7yW3x7OvFHtoVqdbaD3+D5jgK3Bytu+hw1j06XcWuAmjqIzvjNSt1tZ2GXK6jTszKgmrosSmUuV5sfK26k1G+QcEuY+LGwOfHVNyVvh3+psoVLpeSVYVIK8lsZp1ITdos1RRLIpyW1999xlaom9vBzU043v8AI62d7GeQqTDUaiMPiaXt1f2OXqeJpWwV/OSaXyN0o1Kn9V9jnUq06f8AZ/fyN7YHG1HG1GKxh635ey8+7OVqeK1Zzcot01+WKbsla31Z7qXC1pc9vH8HiqcbQhy38D0cuI0YzcHUipRve97J+L9LmDinH6VODVN51GrR2do+7b6nlquoS6bv9jFUnveTu2fSp+z4Jpybt8j5Ff2tUtjBK/nb0v1YVxCtKeTc5OrJ5elqU3v1xb3OBB+rd2TdpfLudLiLjO28E0tu838vByz0VXuceEhaDvzfXzPQ0JRxWLbitrvr9SKlVKLd7WXWzdvexnpVPSleLS6YKyF6ipK3pV/qds7I8ao3kY9TqptYt05q99o/ytjIPqOb6pQ3v0UNxDPLJ3Z9SnFRVl6egylVnHaDfy6r7MZzKi+LZb9UvsZmD+fb3+wuacFe9l5Gh1VhHKLd0ZnJdo7FqdSSvbf5lZVHf+L2JcsY2/Y51KbteFt3lbb7CpY/ly972KZMkXCjb9kolFUWSBpkkogAQ019VOaSmou3T0pP7iEyCSt3IkkrI26WvJNOKoK6tf0RfVdfUd+lqZpbSVv8u6+lzykfdX/Y6Gm1FlZfCuqS2R1hNcmePiKDfvR268Tuy1s9vVa3hRLw4tKP5bvypOLOXGomrpkZI6NI8sc0+bPSabjsmscpRfbKz+0mWq6upOOEptxvdq73+fk85BXZtjVktk/3ZylTinex0fFSSs7nRpzcWpRbi10abTRuo8VqqScnmujXRP7HCeokt7/ezEU9XKavdq/boHRjPnZ9eZYcW4q8brryPaf13MWz27rv9SzpuNmzx+jlWlUcKam2oqTcLuyd0rrt0f2OjCtq1thJvt6WrL9tjn/HUfdi0l8Dv/Kc/emn48z01ORrpy/vweco1dTb1Qttti02/a3/ACJrcQqw2qRlC/S+6f1ODoSbsj1LjIQjeV/mn9j2H9WoK7f/ALuZtRxhbqC7eNzx0uKSfRW+buKlr52+L7JJmP8Anpu7SOU/bS5Qv8juarW43lJpfPd/8nF1XF5P4Eory92/p2OfVquTu2383uIlI9UKKR4p8VOfLZddprlxGb+JRf3QmeqlL+F0EFW0emKSObk5c2XzZSe6d99t/chzEV67irrdvog5FjTbeyMGodNt4Jp36NJJfKxnH1qql+W0urfuJPMz6cNlb8mqhbaTmo27LYZUjN7xqKz6dv3MakvF379CZTUuqs7W27lT7DLg27+iCtGV/U7226piiWVMnRbEMhksqwbJuRcCpllJRZRBFkS4sTGJdEIvGJGyFXC4KL7jkDVy3MsS4kDGrENXKmBY6nP/AFP6lIx3S8tI60KEErde2+7NcjUabmIhO399wcn5K6iGErJt3V9+392KqW1zpc8s6eL3NNCvi9+h0KdRS6d2kjkDtLqpUpqcLXV9pbp7WDueedKMz0EeGSkrNty/Slk0crilF6Vq8PRUjPDJ4tTVruzXTdfcdxT8U1ZKnCg+SsbzxUcnO7Vk+0bJP6nC1muq1mnVqSm4pqOT6J9bGFKR6Y8PTitj6dwXQOhStnLmTinNrGST3tGLcfhV3btu/I/h+nnSlNyrSqKTvaTuk/1ez9lsZOC1X/S6a97/ANPSvfr8CNvNPM03e/b3I9akla3Zy3YydJOV1sr7r+B1FqCt1v1uZeYHNI4NqzLGcYu65myWD6xi/nFMw6/hNCtZtODX/bUY3+atZluaHNJGm4u6ZqdSM1aSuee41wanQp8xVJbSStKN8m+yaWz69Tzkqh9BrqE4uE0pQkvUn0/4PnOpqRhOcYu6jNpPyk7J/Y9lGbtZs+bXoxyTgizbIv8At1M1Sve1vNxWT89ep0ciRpNo2ZryjLV1G8Wk9iomU33W3uZcjpCkkyKk8m3a122UBgczutiYsiX0Kk3AIZBJAKiGVZLAGiCpLIMspZF0VLIyisshseglDkRmWWRZFUCALFJRsMFzKjLKt237p3XzNcNarbp5e3RmORU2kahNw5Da1ZzlfptbqLzflkAUy93dl+ZLyX53nxbYSBbkshkpJ/YhxW/y8lCQLHrdN+KXkuZT9ODTw65X2dn7GzT/AImpSklJSgmnvLdJ3Vlt7X+x4a5ZVGNjOLPff/oNPdrN7Nr4XZ2V9v3X0Fv8S0b2tUtfriulutr+djw6q+xZVV5LZGWme5j+IaDy3krdPS/V8hGr/E1OC/w06jfzhFfdXPGOr2KOqyWRVGR29fx+rWjhtTi1aShe8vm/HscpsQ5PyypblxNGS8oq6i+YkCXLiXdR/Io2AEKAAVBQAAAAhgQwVEMCGAKQypLK3MlLolFUy5g00WiOixKLRZWjI5EopGVy6MkJKT6lhcpmiMiRANlToQsAAAAAAAAAAAAAUAAAQAAAAAAAAAAAAAAABUAAAgkhgEEMllQaJKskoyFBlSWylzJUXiy6JAhpgi6AAjJZMYpkACA5CgA1EyyQADRALAAAAAAAAAAAAAAEAABIAAAAAAAAAABUAAAAAAggABUVZIAClWyjYAZZoq2VuAENH//Z"
+                            alt="">
+                    </div>
+                    <p>Mô Hình Anime</p>
+                    <div class="main-mohinh">
+                        {{#each data}}
+                        <div class="mohinh-item" style="display: flex;flex-direction:column">
+                            <a href="/anime/animedetails/{{this.id}}">
+                                <img width="200px" height="200px" src="{{this.img}}">
+                                <p style="margin-top: -5px;color:black;">{{this.name}}</p>
+                                <p id="discription" style="color:tomato">{{this.discription}}</p>
+                                <p style="color:black">{{this.price}}K VND</p>
+                            </a>
+
+                        </div>
+                        {{/each}}
+                        <div class="mohinh-item" style="display: flex;flex-direction:column">
+                            <a href="/add" class="mohinh-item {{display}} add_sp" style="background-color: white">
+                                <img width="100px" src="https://cdn-icons-png.flaticon.com/128/1828/1828819.png"
+                                    style="margin-top: 150px;">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

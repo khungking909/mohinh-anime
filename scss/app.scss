@@ -1,0 +1,442 @@
+.container
+{
+    width: 100%;
+    margin-top: -10px;
+    margin-left: -7px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+   
+}
+.top
+{
+    width: 100%;
+    height: 30px;
+    background-color: #fa6e4f;
+    margin-top: -10px;
+    margin-left: -7px;
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+}
+
+.top-1
+{
+    width: 70%;
+    background-color: #fa6e4f;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top_mid
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+
+}
+.call
+{
+    display: flex;
+}
+.call p
+{
+    margin-right: 3px;
+}
+.bot
+{
+    width: 100%;
+    height: 150px;
+    margin-left: -7px;
+    display: flex;
+    justify-content: center;
+}
+.bot-1
+{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search
+{
+    display: flex;
+    align-items: center;
+    border: 1px gray solid;
+    padding: 5px 15px 5px 15px;
+    border-radius:50px;
+    height: 20px;
+}
+.search input
+{
+    outline: none;
+    border: none;
+    height: 20px;
+}
+.congcu
+{
+    display: flex;
+    color: gray;
+    font-size: 15px; 
+}
+
+.congcu-1
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: gray;
+    position: relative;
+}
+.tabar
+{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+}
+.tabar-1
+{
+    width: 70%;
+    display: flex;
+    
+}
+.tabar-1 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.tabar-2
+{
+   
+    position: relative;
+}
+.tabar-2 img
+{
+    margin: 0px 10px  0px 10px;
+}
+.tabar-2:hover .tabar-hover
+{
+    display: block;
+   
+}
+.tabar-hover
+{
+    color: red;
+    display: none;
+    position: absolute;
+    width: 240px;
+    background-color: #ecf0f1;
+   
+}
+.tabar-hover__item:hover
+{
+    color: #27ae60;
+}
+.tabar-hover p
+{
+    margin-left: 10px;
+}
+.tabar-hover a
+{
+    color: #fa6e4f;
+}
+.tb{
+    font-size: 15px;
+    background-color: #fa6e4f;
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    
+    
+}
+.main
+{
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-1
+{
+    width: 70%;
+    font-size: 20px;
+    margin-top: 20px;
+    display: flex;
+}
+.menu-search
+{
+
+    border-bottom: 3px  solid gray;
+    
+}
+.list_search
+{
+    margin-left: 5px;
+    border-left: 1.5px  solid gray;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+.list_search a
+{
+    margin-left: 10px;
+    color: #fa6e4f;
+    text-decoration: none;
+    font-weight:400;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.main-1__left
+{
+    flex: 1;
+}
+.main-1__right
+{
+    
+    flex: 3.3;
+    
+}
+.main-mohinh
+{
+    margin-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mohinh-item
+{
+    
+    margin-right: 13px;
+    width: 200px;
+    height: 350px;
+    min-height: 400px;
+   
+   
+}
+#discription
+{
+    min-height: 100px;
+}
+.mohinh-item a
+{
+    text-decoration: none;
+}
+.mohinh-item p
+{
+    margin-bottom: -15px;
+    font-size: 15px;
+   
+}
+.mohinh-item:hover
+{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.mohinh-item  + .mohinh-item
+{
+    margin-left: 70px;
+}
+.soluong
+{
+    position: absolute;
+    top:-5px;
+    right: -5px;
+    font-size: 10px;
+    background-color:#fa6e4f;
+    color: white;
+    padding: 0px 5px 0px 5px;
+    border-radius: 500px;
+}
+.details
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+   
+}
+.details-1
+{
+    display: flex;
+    width: 70%;
+    
+}
+.details-1 p
+{
+    margin-top: 30px;
+    color: #fa6e4f ;
+    font-size: 20px;
+    
+}
+.details-1 img
+{
+    flex: 1;
+}
+.details-1_right
+{
+    margin-left: 20px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    flex: 1.3;
+}
+.btn_add
+{
+    padding: 10px 20px 10px 20px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: white;
+    background-color: #fa6e4f;
+    margin-top: 10px;
+    text-align: center;
+}
+.shop
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.shop-1
+{
+    margin-top: 15px;
+    width: 70%;
+    display: flex;
+    
+}
+.shop-1-left
+{
+    flex:6;
+   
+}
+.shop-1-right
+{
+    flex: 4;
+    background-color: #27ae60;
+}
+table
+{
+    color: black;
+}
+thead
+{
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+}
+
+#firt-head
+{
+    min-width: 340px;
+    text-align: start;
+    align-self: center;
+}
+tr
+{
+    display: flex;
+}
+#firt-row
+{
+    display: flex;
+    min-width: 340px;
+    max-width: 340px;
+    margin-top: 10px;
+    align-self: center;
+}
+.second-head
+{
+    min-width: 80px;
+    text-align: start;
+    align-self: center;
+}
+.second-row
+{
+    min-width: 80px;
+    margin-top: 10px;
+    align-self: center;
+}
+.submit-items
+{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px 0px 80px;
+}
+.add_SP
+{
+    display: flex;
+    flex-direction: column;
+   
+    margin:50px 20px 0px 0px
+}
+.add_SP input
+{
+    max-width: 700px;
+    align-self: center;
+    min-width: 700px;
+    min-height: 30px;
+    margin-bottom: 15px;
+}
+.admin
+{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    
+}
+.admin-1
+{
+    width: 70%;
+    display: flex;
+}
+.block
+{
+    display: block;
+}
+.none{
+    display: none;
+}
+.block
+{
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+    background-color: #fa6e4f;
+    color: white;
+
+}
+.block  + .block
+{
+    margin-top: 10px;
+}
+.ud
+{
+    
+    width: 300px;
+    height: 20px;
+    align-self: center;
+}
+.ud + .ud
+{
+    margin-top: 20px;
+}
+.add_sp{
+    align-self: center;
+    
+}
+#register
+{
+    padding: 10px  110px 10px 110px;
+    background-color:#3e8e41 ;
+    text-decoration: none;
+    color:white;
+    border-radius: 50px;
+}

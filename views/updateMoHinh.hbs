@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap Nhat</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <form action="?_method=PATCH" style="display:flex;flex-direction:column;margin-top:50px" method="post" >
+        {{#each data}}
+            <label class='ud'>name</label>
+            <input class='ud' type="text" value="{{name}}" name="name">
+            <label class='ud'>discripton</label>
+            <input class='ud' type="text" value="{{discription}}" name="discription">
+            <label class='ud'>price</label>
+            <input class='ud' type="text" value="{{price}}" name="price">
+            <label class='ud'>kind</label>
+            <input class='ud' type="text" value="{{kind}}" name="kind">
+            <label class='ud'>img</label>
+            <input class='ud' type="text" value="{{img}}" name="img">
+        {{/each}}
+        <input type="submit" class='ud' value="UPDATE">
+    </form>
+</body>
+</html>
